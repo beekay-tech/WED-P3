@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_assets/myfirststyles.css">
+    <title>Enquiries - Our Bakery</title>
+</head>
+<body>
+    <header style="background-color: #6c4b4b; color: white; padding: 20px; text-align: left;">
+        <img src="_images/logo.png" alt="Bakery Logo" width="300">
+        <h1>Enquiries</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding: 20px;">
+        <section class="enquiries-box">
+            <h2>Enquiry Application</h2>
+            <p>We offer a wide range of baked goods, including cakes, pastries, bread, and more. Our services include custom cake orders, catering for events, and baking classes.</p>
+            <p>For enquiries, please fill out the form below or visit us at our location at <strong>Halfway House, Midrand</strong>.</p>
+            
+            <form action="submit_enquiry.php" method="post" style="margin-bottom: 30px;">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <!-- Map Section -->
+            <div class="map-container">
+                <h3>Visit us at our Factory and explore how we make our delicious baked goods!</h3>
+                <p><strong>Address:</strong> Halfway House, Midrand</p>
+                <iframe 
+                    src="https://maps.google.com/maps?q=Halfway%20House,%20Midrand&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="350" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background-color: #6c4b4b; color: white; padding: 20px; text-align: center;">
+        <address style="font-style: normal; margin-bottom: 10px;">
+            <strong>Visit Us:</strong> Halfway House, Midrand
+        </address>
+        <p>&copy; 2026 Our Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

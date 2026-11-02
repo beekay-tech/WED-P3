@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_assets/myfirststyles.css">
+    <title>Our Services</title>
+    <style>
+        /* Slideshow Container Styling */
+        .slideshow-container {
+            max-width: 700px;
+            position: relative;
+            margin: 20px auto;
+            border: 2px solid #6c4b4b;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fffaf7;
+        }
+
+        /* Hide all slides by default */
+        .mySlides {
+            display: none;
+            text-align: center;
+        }
+
+        .mySlides img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Next & Previous Buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 12px 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s ease;
+            border-radius: 0 4px 4px 0;
+            user-select: none;
+            background-color: rgba(108, 75, 75, 0.7);
+            transform: translateY(-50%);
+        }
+
+        .next {
+            right: 0;
+            border-radius: 4px 0 0 4px;
+        }
+        .prev {
+            left: 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(108, 75, 75, 1);
+        }
+
+        /* Slide Caption / Description */
+        .caption-text {
+            color: #6c4b4b;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 12px;
+            text-align: center;
+            background-color: #fffaf7;
+        }
+
+        /* Number text (1/5, 2/5, etc.) */
+        .numbertext {
+            color: #ffffff;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+            background-color: rgba(108, 75, 75, 0.7);
+            border-bottom-right-radius: 5px;
+        }
+
+        /* Dot Indicators */
+        .dot-container {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 12px;
+            width: 12px;
+            margin: 0 4px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #6c4b4b;
+        }
+
+        /* Fade Animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 0.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: #6c4b4b; padding: 20px; text-align: left;">
+        <img src="_images/logo.png" alt="Bakery Logo" width="300">
+        <h1 style="color: white;">Our Services</h1>
+        <nav>
+            <ul style="background-color: #fffaf7;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section style="background-color: #fffaf7; border: 2px solid #6c4b4b; border-radius: 8px; padding: 20px; text-align: left;">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Custom cake orders for birthdays, weddings, and special occasions.</li>
+                <li>Fresh pastries, bread, and baked goods made daily.</li>
+                <li>Catering for events, parties, and corporate gatherings.</li>
+                <li>Baking classes for beginners and family groups.</li>
+                <li>Seasonal and handmade treats created with care.</li>
+            </ul>
+        </section>
+
+        <!-- Image Slideshow Section -->
+        <section style="background-color: #fffaf7; border: 2px solid #6c4b4b; border-radius: 8px; margin-top: 20px; padding: 20px; text-align: center;">
+            <h2>Our Bakery Gallery</h2>
+            <div class="slideshow-container">
+
+                <!-- Slide 1 -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="_images/berry jam croissant.jpg" alt="Berry Jam Croissant">
+                    <div class="caption-text">Berry Jam Croissant</div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="_images/black forest savoury.jpg" alt="Black Forest Cake">
+                    <div class="caption-text">Black Forest Slice</div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="_images/creamy vanilla muffins.jpg" alt="Creamy Vanilla Muffins">
+                    <div class="caption-text">Creamy Vanilla Cupcakes</div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="_images/special cakes.jpg" alt="Special Cakes">
+                    <div class="caption-text">Specialty Custom Cakes</div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="_images/Garlic stuffed croissants.jpg" alt="Garlic Stuffed Croissant">
+                    <div class="caption-text">Garlic Stuffed Croissant </div>
+                </div>
+
+                <!-- Back and Forth Buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- Dots / Indicators -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </section>
+
+        <section style="background-color: #fffaf7; border: 2px solid #6c4b4b; border-radius: 8px; margin-top: 20px; padding: 20px; text-align: left;">
+            <h2>Enquiry Application</h2>
+            <p>Interested in our services? Submit an enquiry application to get started.</p>
+            <a href="enquiries.html">Complete the enquiry application</a>
+        </section>
+    </main>  
+
+    <footer style="background-color: #6c4b4b; color: #ffffff; text-align: center; padding: 1rem; margin-top: 20px;">
+        <p>&copy; 2026 Our Bakery. All rights reserved.</p>
+    </footer>      
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>
